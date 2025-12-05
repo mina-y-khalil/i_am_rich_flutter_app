@@ -6,14 +6,13 @@ void main() {
     MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.blueGrey,
-        appBar: AppBar(
-          title: Text("I am rich"),
-          backgroundColor: Colors.teal,
-
+        appBar: AppBar(title: Text("I am rich"), backgroundColor: Colors.teal),
+        body: Center(
+          child: Image(
+            image: AssetImage('images/diamond.png'),
+          ),
         ),
-        body: Center(child: Image(image: NetworkImage("https://redeem-innovations.com/wp-content/uploads/2025/10/redeem-innovations.png")))
       ),
     ),
   );
 }
-
